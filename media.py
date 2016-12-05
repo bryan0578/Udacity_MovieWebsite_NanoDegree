@@ -22,7 +22,7 @@ class Movie(Video):
 """ This clss provided a way to store information associated with the Tv_show class only. """
 class Tv_show(Video):
     def __init__(self, title, synopsis, rating, duration, seasons, episodes, poster_image, trailer_youtube):
-        Video.__init__(self, title, synopsis, rating, duration, poster_image, trailer_youtube)
+        Video.__init__(self, title, synopsis, duration, poster_image, trailer_youtube)
         self.rating = rating
         self.seasons = seasons
         self.episodes = episodes
