@@ -1,4 +1,6 @@
-# Class for universal video information shared between movies and tv shows.
+import webbrowser
+
+""" This class provides a way to store information used by class Movie and class Tv_show that will be inherited """
 class Video():
     def __init__(self, title, synopsis, duration, poster_image, trailer_youtube):
         self.title = title
@@ -7,7 +9,7 @@ class Video():
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
 
-# Class for information used only for movies.
+""" This clss provided a way to store information associated with the Movie class only. """
 class Movie(Video):
     def __init__(self, title, synopsis, rating, duration, poster_image, trailer_youtube):
         Video.__init__(self, title, synopsis, duration, poster_image, trailer_youtube)
@@ -15,8 +17,9 @@ class Movie(Video):
 
     #Function that opens the browser to play trailers on youtube.
     def show_trailer(self):
+        webbrowser.open(self.trailer_youtube_url)
 
-# Class for information used only for tv shows.
+""" This clss provided a way to store information associated with the Tv_show class only. """
 class Tv_show(Video):
     def __init__(self, title, synopsis, rating, duration, seasons, episodes, poster_image, trailer_youtube):
         Video.__init__(self, title, synopsis, rating, duration, poster_image, trailer_youtube)
@@ -26,3 +29,4 @@ class Tv_show(Video):
 
     # Function that opens the browser to play trailers on youtube.
     def show_trailer(self):
+        webbrowser.open(self.trailer_youtube_url)
