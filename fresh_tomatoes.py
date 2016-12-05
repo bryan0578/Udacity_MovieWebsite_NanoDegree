@@ -11,6 +11,7 @@ main_page_head = '''
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
@@ -18,6 +19,14 @@ main_page_head = '''
             background: black;
             color: white;
             padding-top: 80px;
+        }
+        .navbar .navbar-brand{
+            font-weight: bold;
+            font-size:2em;
+            
+        }
+        .navbar .navbar-header a{
+            margin-top:10px;
         }
         h1{
             font-size:6em;
@@ -98,6 +107,7 @@ main_page_head = '''
               'frameborder': 0
             }));
         });
+
         // Animate in the movies when the page loads
         $(document).ready(function () {
           $('.movie-tile').hide().first().show("fast", function showNext() {
@@ -134,8 +144,11 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">BCASH's Favorite Movies</a>
+            <a class="navbar-brand" href="#">My Favorite Movies and TV Shows</a>
           </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/bryan0578/"><i class="fa fa-github fa-3x"></i></a></li>
+            </ul>
         </div>
       </div>
     </div>
@@ -221,7 +234,7 @@ def create_tvShow_tiles_content(tvShows):
 
 def open_movies_page(movies, tvShows):
     # Create or overwrite the output file
-    output_file = open('fresh_tomatoes.html', 'w')
+    output_file = open('index.html', 'w')
 
     # Replace the placeholder for the movie tiles with the actual dynamically generated content
     rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies),
