@@ -1,3 +1,4 @@
+import fresh_tomatoes
 import media
 
 """ This is a list of movies and their information that will be filled in using the class Movie """
@@ -135,3 +136,5 @@ tvShows = [breaking_bad, charmed, supernatural, lucifer, nurse_jackie, friends]
 
 # print(movies)
 # print(tvShows)
+
+fresh_tomatoes.open_movies_page(movies, tvShows)
