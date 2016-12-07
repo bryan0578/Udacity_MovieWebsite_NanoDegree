@@ -4,11 +4,15 @@
     <title>BCASH's Favorite Movies</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1
+.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3
+.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font
+-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js
+/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
             background: black;
@@ -18,7 +22,7 @@
         .navbar .navbar-brand{
             font-weight: bold;
             font-size:2em;
-            
+
         }
         .navbar .navbar-header a{
             margin-top:10px;
@@ -76,16 +80,20 @@
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal',
+function (event) {
+            // Remove the src so the player itself gets removed, as this is
+            //the only
             // reliable way to ensure the video stops playing in IE
             $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+            var sourceUrl = 'http://www.youtube.com/embed/' +
+trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($(
+"<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
@@ -94,8 +102,10 @@
         });
         $(document).on('click', '.tvShow-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+            var sourceUrl = 'http://www.youtube.com/embed/' +
+trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($(
+"<iframe></iframe>", {
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
@@ -122,8 +132,11 @@
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          <a href="#" class="hanging-close" data-dismiss="modal"
+aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4
+-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZ
+lc-o_=s0#w=24&h=24"/>
           </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
@@ -136,10 +149,12 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">My Favorite Movies and TV Shows</a>
+            <a class="navbar-brand" href="#">My Favorite Movies and TV
+Shows</a>
           </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://github.com/bryan0578/"><i class="fa fa-github fa-3x"></i></a></li>
+                <li><a href="https://github.com/bryan0578/"><i class="fa
+fa-github fa-3x"></i></a></li>
             </ul>
         </div>
       </div>
@@ -148,7 +163,9 @@
         <h1>MOVIES</h1>
         
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="4-8yIHdMcnI" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+data-trailer-youtube-id="4-8yIHdMcnI" data-toggle="modal"
+data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" width="220" height="342">
     <h2>Toy Story</h2>
     <p>A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.</p>
@@ -156,7 +173,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="4fE_yHEerok" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+data-trailer-youtube-id="4fE_yHEerok" data-toggle="modal"
+data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Rogue_One%2C_A_Star_Wars_Story_poster.png" width="220" height="342">
     <h2>Rogue One</h2>
     <p>The Rebellion makes a risky move to steal the plans to the Death Star, setting up the epic saga to follow.</p>
@@ -164,7 +183,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="dCVh4lBfW-c" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+data-trailer-youtube-id="dCVh4lBfW-c" data-toggle="modal"
+data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/f/fa/A_Nightmare_on_Elm_Street_%281984%29_theatrical_poster.jpg" width="220" height="342">
     <h2>A Nightmare On Elm Street</h2>
     <p>Several people are hunted by a cruel serial killer who kills his victims in their dreams. While the survivors are trying to find the reason for being chosen, the murderer won't lose any chance to kill them as soon as they fall asleep.</p>
@@ -172,7 +193,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="WtR9tqPa48s" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+data-trailer-youtube-id="WtR9tqPa48s" data-toggle="modal"
+data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/The_Jungle_Book_%282016%29.jpg" width="220" height="342">
     <h2>The Jungle Book</h2>
     <p>After a threat from the tiger Shere Khan forces him to flee the jungle, a man-cub named Mowgli embarks on a journey of self discovery with the help of panther, Bagheera, and free spirited bear, Baloo.</p>
@@ -180,7 +203,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="yIzhAKtEzY0" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+data-trailer-youtube-id="yIzhAKtEzY0" data-toggle="modal"
+data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Amadeusmov.jpg" width="220" height="342">
     <h2>Amadeus</h2>
     <p>The incredible story of Wolfgang Amadeus Mozart, told by his peer and secret rival Antonio Salieri - now confined to an insane asylum.</p>
@@ -188,7 +213,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="5UfA_aKBGMc" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center"
+data-trailer-youtube-id="5UfA_aKBGMc" data-toggle="modal"
+data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/ReturnOfTheJediPoster1983.jpg" width="220" height="342">
     <h2>Star War Episode VI Return of the Jedi</h2>
     <p>After rescuing Han Solo from the palace of Jabba the Hutt, the rebels attempt to destroy the second Death Star, while Luke struggles to make Vader return from the dark side of the Force.</p>
@@ -200,7 +227,9 @@
         <h1>TV Shows</h1>
         
 
-<div class="col-md-6 col-lg-4 tvShow-tile text-center" data-trailer-youtube-id="XZ8daibM3AE" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 tvShow-tile text-center"
+data-trailer-youtube-id="XZ8daibM3AE" data-toggle="modal"
+data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0ODYzODc0OV5BMl5BanBnXkFtZTgwMDk3OTcyMDE@._V1_SY1000_CR0,0,678,1000_AL_.jpg" width="220" height="342">
     <h2>Breaking Bad</h2>
     <p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
@@ -209,7 +238,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 tvShow-tile text-center" data-trailer-youtube-id="A2wmzteG_t8" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 tvShow-tile text-center"
+data-trailer-youtube-id="A2wmzteG_t8" data-toggle="modal"
+data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0ODAyNjkzMF5BMl5BanBnXkFtZTYwMTExMDU3._V1_.jpg" width="220" height="342">
     <h2>Charmed</h2>
     <p>Three sisters discover their destiny - to battle against the forces of evil, using their witchcraft. They are the Charmed Ones.</p>
@@ -218,7 +249,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 tvShow-tile text-center" data-trailer-youtube-id="ihh0xfsvyDg" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 tvShow-tile text-center"
+data-trailer-youtube-id="ihh0xfsvyDg" data-toggle="modal"
+data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTA1OTY0NTk5MTJeQTJeQWpwZ15BbWU4MDYwMjU4MjAy._V1_SY1000_CR0,0,666,1000_AL_.jpg" width="220" height="342">
     <h2>Supernatural</h2>
     <p>Two brothers follow their father's footsteps as hunters fighting evil supernatural beings of many kinds including monsters, demons, and gods that roam the earth.</p>
@@ -227,7 +260,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 tvShow-tile text-center" data-trailer-youtube-id="N7Y_JxjbRS4" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 tvShow-tile text-center"
+data-trailer-youtube-id="N7Y_JxjbRS4" data-toggle="modal"
+data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjI4MTU0NzE1OF5BMl5BanBnXkFtZTgwODI3NDc0OTE@._V1_SY1000_CR0,0,646,1000_AL_.jpg" width="220" height="342">
     <h2>Lucifer</h2>
     <p>Lucifer takes up residence in Los Angeles.</p>
@@ -236,7 +271,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 tvShow-tile text-center" data-trailer-youtube-id="5dpjMmSLjvQ" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 tvShow-tile text-center"
+data-trailer-youtube-id="5dpjMmSLjvQ" data-toggle="modal"
+data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkwMjA4Mzc3M15BMl5BanBnXkFtZTgwNDk1Njc2MTE@._V1_.jpg" width="220" height="342">
     <h2>Nurse Jackie</h2>
     <p>A drug-addicted nurse struggles to find a balance between the demands of her frenetic job at a New York City hospital and an array of personal dramas.</p>
@@ -245,7 +282,9 @@
 </div>
 
 
-<div class="col-md-6 col-lg-4 tvShow-tile text-center" data-trailer-youtube-id="hDNNmeeJs1Q" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 tvShow-tile text-center"
+data-trailer-youtube-id="hDNNmeeJs1Q" data-toggle="modal"
+data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4NzEyNzQ5OF5BMl5BanBnXkFtZTYwNTY3NDg4._V1._CR24,0,293,443_.jpg" width="220" height="342">
     <h2>Friends</h2>
     <p>Follows the personal and professional lives of six 20 to 30-something-year-old friends living in Manhattan.</p>
