@@ -4,7 +4,7 @@ A simple python webpage that displays a list of my favorite movies and tv shows 
 ##Step 1: Make sure Python is installed
 Open up Command Prompt (Windows) or Terminal (Mac), and ensure Python is installed on your system by entering the following command:
 ```python
-python --version
+python -v
 ```
 If Python is installed, this command will return “Python X.Y.Z”, where X.Y.Z is your version number. If Python is not installed, [download Python here](https://www.python.org/downloads/).
 
